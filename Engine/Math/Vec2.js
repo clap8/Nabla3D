@@ -55,4 +55,8 @@ class Vec2 {
     let angle = Math.atan2(a[1], a[0]);
     return (angle > 0) ? angle : (angle + Math.PI*2);
   }
+
+  static isEqual(a, b) {
+    return a[0] == b[0] && a[1] == b[1];
+  }
 }
